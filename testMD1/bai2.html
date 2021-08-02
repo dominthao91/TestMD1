@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    function arr() {
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+        let index = 0;
+        let check = false;
+        let number =+ prompt('nhập vào số cần tìm');
+        for (let i = 0; i < arr.length; i++) {
+            if (number == arr[i]) {
+                check = true;
+                index = i;
+                alert(number + 'là số cần tìm' + 'vị trí thứ' + index);
+                break;
+            }
+        }
+        if (check == true) {
+            alert('số nhập vào có trong mảng');
+        } else {
+            alert('số nhập vào không nằm trong mảng');
+        }
+    }
+
+    arr();
+
+
+</script>
+</body>
+</html>

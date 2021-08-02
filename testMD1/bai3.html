@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số kí tự nguyên âm</title>
+</head>
+<body>
+<script>
+
+    let array = ['a','o','e','u','i'];
+    function checks (){
+        let strings = prompt('nhập vào 1 chuỗi bất kì');
+        let count = 0;
+        for (let i = 0; i < strings.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (strings[i].toUpperCase() == array[j].toUpperCase()){
+                    count++;
+                }
+            }
+        }
+        if (count == 0){
+           alert('chuỗi nhập vào ko chứa kí tự nguyên âm');
+        }else {
+            alert('chuỗi nhập vào có chứa kí tự nguyên âm');
+        }
+    }checks ();
+</script>
+</body>
+</html>
